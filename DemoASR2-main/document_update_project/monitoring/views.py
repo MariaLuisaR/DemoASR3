@@ -11,9 +11,9 @@ def check_link_status(link):
 
 def server_list(request):
     links = [
-        "https://basedatostarjeta.000webhostapp.com/request.php1",
-        "https://activos000.000webhostapp.com/request.php1",
-        "https://alpestarjeta.000webhostapp.com/request.php1"
+        "https://basedatostarjeta.000webhostapp.com/request.php",
+        "https://activos000.000webhostapp.com/request.php",
+        "https://alpestarjeta.000webhostapp.com/request.php"
     ]
 
     servers = []
@@ -28,9 +28,9 @@ def server_list(request):
 
 def check_links(request):
     links = [
-        "https://basedatostarjeta.000webhostapp.com/request.php",
-        "https://activos000.000webhostapp.com/request.php",
-        "https://alpestarjeta.000webhostapp.com/request.php"
+        "https://basedatostarjeta.000webhostapp.com/request.php1",
+        "https://activos000.000webhostapp.com/request.php1",
+        "https://alpestarjeta.000webhostapp.com/request.php1"
     ]
 
     statuses = {}
