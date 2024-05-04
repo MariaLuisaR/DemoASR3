@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server List</title>
+</head>
+<body>
+    <h1>Server List</h1>
+    <ul>
+        {% for server in servers %}
+            <li>{{ server.name }} - Status: {{ server.status }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if error_message %}
+        <p>{{ error_message }}</p>
+        {% if not user_name %}
+            <form method="post">
+                {% csrf_token %}
+                {{ email_form.as_p }}
+                <button type="submit">Submit</button>
+            </form>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
